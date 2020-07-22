@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E1E9EE;
+}
+
+nav div h1 {
+    padding: 28px 32px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+nav i {
+    visibility: hidden;
+}
+
+.nav {
+    color: cornsilk;
+    width: 100%;
+    min-height: 30px;
+    background-color: black;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+section {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.contact {
+    background-color: blanchedalmond;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.icon img {
+    margin: 10px;
+    width: 40px;
+}
+
+.project {
+    height: auto;
+    margin-top: 20px;
+    background-color: rgb(250, 255, 205);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    text-align: center;
+    width: auto;
+    height: 50%;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+}
+
+.divL,
+.divR {
+    /* display: inline-block;
+    box-sizing: border-box; */
+    width: 49%;
+    padding: 10px;
+    margin: 0;
+    float: left;
+}
+
+.divL {
+    background: #ffe9c6;
+}
+
+.divR {
+    background: #ffdad8;
+}
+
+.project a {
+    margin: 10px;
+    width: 40px;
+}
+
+.icon2 {
+    margin: 10px;
+    width: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    nav div h1 {
+        text-align: center;
+    }
+    nav i {
+        visibility: visible;
+        background-color: black;
+        margin-left: 4px;
+    }
+    nav i input {
+        size: 10px 10px;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+    nav ul li {
+        border: oldlace solid 1px;
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+}

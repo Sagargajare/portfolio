@@ -67,12 +67,20 @@ section {
 }
 
 .contact {
-    background-color: blanchedalmond;
+    overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    padding: 20px;
 }
 
-.icon img {
+.div1,
+.div2,
+.div3 {
+    float: left;
+    width: 33%;
+}
+
+.slogo {
     margin: 10px;
     width: 40px;
 }
@@ -80,53 +88,22 @@ section {
 .project {
     height: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: rgb(250, 255, 205);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
-.pro {
-    display: flex;
-    flex-direction: column;
-}
-
-.image {
-    text-align: center;
-    width: auto;
-    height: 50%;
-}
-
 .contain {
-    display: flex;
-    flex-direction: row;
+    overflow: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .divL,
 .divR {
-    /* display: inline-block;
-    box-sizing: border-box; */
-    width: 49%;
-    padding: 10px;
-    margin: 0;
     float: left;
-}
-
-.divL {
-    background: #ffe9c6;
-}
-
-.divR {
-    background: #ffdad8;
-}
-
-.project a {
-    margin: 10px;
-    width: 40px;
-}
-
-.icon2 {
-    margin: 10px;
-    width: 40px;
+    width: 50%;
 }
 
 @media screen and (max-width: 600px) {
@@ -150,6 +127,11 @@ section {
         width: 100%;
     }
     section {
+        width: 100%;
+    }
+    .divL,
+    .divR {
+        float: left;
         width: 100%;
     }
 }
